@@ -1,6 +1,6 @@
 import { Github, ExternalLink } from "lucide-react";
 import project1 from "/src/assets/image.png";
-import project2 from "/src/assets/picture1.jpg";
+import project2 from "/src/assets/Picture1.jpg";
 import project3 from "/src/assets/image.png";
 
 export default function Projects() {
