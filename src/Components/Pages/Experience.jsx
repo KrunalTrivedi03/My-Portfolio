@@ -36,10 +36,9 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="w-full bg-[#FFF2F1] py-10">
+    <section id="experience" className="scroll-mt-[120px] w-full bg-[#FFF2F1] py-10">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
             Experience Timeline
@@ -49,27 +48,22 @@ export default function Experience() {
           </p>
         </div>
 
-        {/* Timeline */}
         <div className="relative w-full overflow-x-auto pb-6">
           <div className="flex items-start gap-20 min-w-max px-4">
 
-            {/* Horizontal Line */}
-            <div className="absolute top-[45px] left-0 w-full h-[3px] bg-red-200"></div>
+            <div className="absolute top-[45px] left-0 w-full h-[3px] bg-[#FF7A59]"></div>
 
             {experiences.map((exp, index) => (
               <div key={index} className="relative text-center">
                 
-                {/* Timeline Point */}
                 <div className="relative z-10 flex justify-center">
-                  <div className="w-10 h-10 rounded-full bg-red-500 text-white flex items-center justify-center shadow-md">
+                  <div className="w-10 h-10 rounded-full bg-[#FF7A59] text-white flex items-center justify-center shadow-md">
                     <Briefcase size={18} />
                   </div>
                 </div>
 
-                {/* Year Label */}
                 <p className="text-red-500 font-semibold mt-3">{exp.year}</p>
 
-                {/* Card */}
                 <div className="mt-6 bg-[#FFF5F5] p-6 rounded-xl shadow-md border border-red-100 w-72">
                   <h3 className="text-xl font-bold text-gray-900">{exp.role}</h3>
                   <p className="text-gray-700 mt-1">{exp.company}</p>
@@ -77,7 +71,7 @@ export default function Experience() {
                   <ul className="text-gray-600 mt-4 space-y-2 text-left">
                     {exp.details.map((d, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-red-500 mt-1">•</span> {d}
+                        <span className="text-[#FF7A59] mt-1">•</span> {d}
                       </li>
                     ))}
                   </ul>

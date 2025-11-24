@@ -11,44 +11,44 @@ const skills = [
   {
     id: 1,
     title: "Frontend Development",
-    icon: <Layers size={34} className="text-red-500" />,
+    icon: <Layers size={34} className="text-[#FF7A59]" />,
     items: ["React.js", "JavaScript (ES6+)", "TailwindCSS", "HTML5", "CSS3"],
   },
   {
     id: 2,
     title: "Backend Development",
-    icon: <Server size={34} className="text-red-500" />,
+    icon: <Server size={34} className="text-[#FF7A59]" />,
     items: ["ASP.NET Core", "C#", "Entity Framework", "REST API Development"],
   },
   {
     id: 3,
     title: "Database Management",
-    icon: <Database size={34} className="text-red-500" />,
+    icon: <Database size={34} className="text-[#FF7A59]" />,
     items: ["SQL Server", "Stored Procedures", "Joins & Optimization"],
   },
   {
     id: 4,
     title: "Tools & Platforms",
-    icon: <Wrench size={34} className="text-red-500" />,
+    icon: <Wrench size={34} className="text-[#FF7A59]" />,
     items: ["Git & GitHub", "Postman", "Azure Basics", "VS & VS Code"],
   },
   {
     id: 5,
     title: "Problem Solving",
-    icon: <Code2 size={34} className="text-red-500" />,
+    icon: <Code2 size={34} className="text-[#FF7A59]" />,
     items: ["Debugging", "Clean Code", "Logical Thinking"],
   },
   {
     id: 6,
     title: "Additional Skills",
-    icon: <Rocket size={34} className="text-red-500" />,
+    icon: <Rocket size={34} className="text-[#FF7A59]" />,
     items: ["Team Collaboration", "Agile Workflow", "UI/UX Awareness"],
   },
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="w-full bg-[#FFF2F1] py-10">
+    <section id="skills" className="scroll-mt-[120px] w-full bg-[#FFF2F1] py-10">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="text-center mb-14">

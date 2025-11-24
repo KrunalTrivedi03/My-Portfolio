@@ -38,7 +38,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="w-full bg-[#FFF2F1] py-10">
+    <section id="projects" className="scroll-mt-[120px] w-full bg-[#FFF2F1] py-10">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-14">

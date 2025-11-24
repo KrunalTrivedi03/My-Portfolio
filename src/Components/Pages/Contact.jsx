@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="w-full bg-[#FFF2F1] py-10">
+    <section id="contact" className="scroll-mt-[120px] w-full bg-[#FFF2F1] py-10">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
 
         <div>
@@ -36,8 +36,8 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="px-10 py-3 bg-[#FF7A59] text-white font-semibold 
-                         rounded-full text-lg shadow-md hover:bg-[#ff6a40] transition cursor-pointer"
+              className="px-10 py-2 bg-[#FF7A59] text-white font-semibold 
+                         rounded-sm text-lg shadow-md hover:bg-[#ff6a40] transition cursor-pointer"
             >
               Submit
             </button>

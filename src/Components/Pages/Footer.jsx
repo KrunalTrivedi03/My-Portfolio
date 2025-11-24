@@ -65,8 +65,8 @@ export default function Footer() {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-12 right-6 bg-red-500 text-white p-3 rounded-full shadow-lg 
-                     hover:bg-red-600 transition-all duration-300 transform hover:scale-110 animate-fade-in"
+          className="fixed bottom-12 right-6 bg-[#FF7A59] text-white p-3 rounded-full shadow-lg 
+                     hover:bg-[#ff6a40] cursor-pointer transition-all duration-300 transform hover:scale-110 animate-fade-in"
         >
           <ArrowUp size={20} />
         </button>

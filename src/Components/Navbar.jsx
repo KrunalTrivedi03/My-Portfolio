@@ -22,6 +22,18 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const offset = 120;
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+
+    setMobileOpen(false);
+  };
+
   return (
     <nav
       className={`w-full fixed top-0 left-0 z-50 transition-colors duration-200 ${
@@ -30,48 +42,46 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
         <h1 className="text-3xl font-bold text-gray-800">
-          Krunal<span className="text-red-500">.</span>
+          Krunal<span className="text-[#FF7A59]">.</span>
         </h1>
 
         <ul className="hidden md:flex gap-10 text-gray-700 font-normal items-center">
-          <li>
-            <a href="#home" className="hover:text-red-500 transition">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#services" className="hover:text-red-500 transition">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#project" className="hover:text-red-500 transition">
-              Project
-            </a>
-          </li>
-          <li>
-            <a href="#pricing" className="hover:text-red-500 transition">
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a href="#testimonial" className="hover:text-red-500 transition">
-              Testimonial
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:text-red-500 transition">
-              Contact us
-            </a>
-          </li>
-          <li>
-            <a
-              href="#hire"
-              className="px-7 py-3 bg-[#FF7A59] text-white rounded-md hover:bg-[#ff6a40] transition font-normal"
-            >
-              Hire us
-            </a>
-          </li>
+          <button
+            onClick={() => scrollToSection("home")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => scrollToSection("about")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            About
+          </button>
+          <button
+            onClick={() => scrollToSection("skills")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Skills & Technologies
+          </button>
+          <button
+            onClick={() => scrollToSection("projects")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Projects
+          </button>
+          <button
+            onClick={() => scrollToSection("experience")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Experience
+          </button>
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Contact
+          </button>
         </ul>
 
         <button
@@ -97,9 +107,9 @@ export default function Navbar() {
     mobileOpen ? "translate-x-0" : "-translate-x-full"
   }`}
       >
-        <div className="flex items-center justify-between px-6 py-6 border-b">
+        <div className="flex items-center justify-between px-6 py-6 border-b border-[#f4cccc]">
           <h1 className="text-2xl font-bold text-gray-800">
-            Krunal<span className="text-red-500">.</span>
+            Krunal<span className="text-[#FF7A59]">.</span>
           </h1>
           <button
             onClick={() => setMobileOpen(false)}
@@ -110,70 +120,42 @@ export default function Navbar() {
         </div>
 
         <ul className="flex flex-col gap-4 px-6 mt-6 text-gray-700">
-          <li>
-            <a
-              href="#home"
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 hover:text-red-500"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#services"
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 hover:text-red-500"
-            >
-              Services
-            </a>
-          </li>
-          <li>
-            <a
-              href="#project"
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 hover:text-red-500"
-            >
-              Project
-            </a>
-          </li>
-          <li>
-            <a
-              href="#pricing"
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 hover:text-red-500"
-            >
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a
-              href="#testimonial"
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 hover:text-red-500"
-            >
-              Testimonial
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 hover:text-red-500"
-            >
-              Contact us
-            </a>
-          </li>
-
-          <li className="pt-6">
-            <a
-              href="#hire"
-              onClick={() => setMobileOpen(false)}
-              className="block px-7 py-3 bg-red-500 text-white rounded-md hover:bg-red-600 text-center"
-            >
-              Hire us
-            </a>
-          </li>
+          <button
+            onClick={() => scrollToSection("home")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => scrollToSection("about")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            About
+          </button>
+          <button
+            onClick={() => scrollToSection("skills")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Skills & Technologies
+          </button>
+          <button
+            onClick={() => scrollToSection("projects")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Projects
+          </button>
+          <button
+            onClick={() => scrollToSection("experience")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Experience
+          </button>
+          <button
+            onClick={() => scrollToSection("contact")}
+            className="hover:text-[#ff6a40] cursor-pointer"
+          >
+            Contact
+          </button>
         </ul>
       </div>
     </nav>
