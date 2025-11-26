@@ -40,7 +40,7 @@ export default function About() {
             <ul className="space-y-3 mb-8 text-gray-700">
               <li className="flex items-center gap-3">
                 <CheckCircle className="text-[#FF7A59]" size={20} />
-                2+ Years of hands-on development experience
+                1.5+ Years of hands-on development experience
               </li>
               <li className="flex items-center gap-3">
                 <CheckCircle className="text-[#FF7A59]" size={20} />
@@ -54,15 +54,15 @@ export default function About() {
 
             <div className="grid grid-cols-3 text-center mb-10">
               <div>
-                <h3 className="text-3xl font-bold text-gray-900">02+</h3>
+                <h3 className="text-3xl font-bold text-gray-900">1.5+</h3>
                 <p className="text-gray-600 text-sm">Years Experience</p>
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-gray-900">15+</h3>
+                <h3 className="text-3xl font-bold text-gray-900">9+</h3>
                 <p className="text-gray-600 text-sm">Projects</p>
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-gray-900">10+</h3>
+                <h3 className="text-3xl font-bold text-gray-900">6+</h3>
                 <p className="text-gray-600 text-sm">Technologies</p>
               </div>
             </div>
