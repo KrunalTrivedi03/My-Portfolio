@@ -1,5 +1,5 @@
 import { Github, ExternalLink } from "lucide-react";
-import project1 from "/src/assets/image.png";
+import project1 from "/src/assets/Autodeal.png";
 import project2 from "/src/assets/Picture1.jpg";
 import project3 from "/src/assets/image.png";
 
@@ -7,17 +7,17 @@ export default function Projects() {
   const projectList = [
     {
       id: 1,
-      title: "Smart Shipping Portal",
+      title: "Autodeal Django Python",
       description:
-        "A full-stack logistics platform with real-time rate fetching, quote management, and booking workflow using React + .NET Core.",
-      tech: ["React.js", "ASP.NET Core", "SQL Server", "TailwindCSS"],
+        "A vehicle marketplace platform where users can compare vehicles, book their preferred vehicle, and request Roadside Assistance (RSA). Includes a simple search system, user dashboard, and admin management for vehicle listings.",
+      tech: ["Html", "Css", "Django", "Python", "SQL"],
       github: "https://github.com/yourusername/smart-shipping",
       live: "#",
       image: project1,
     },
     {
       id: 2,
-      title: "Role & Permission Management System",
+      title: "User Management System with RBAC",
       description:
         "Dynamic RBAC system with permission assignment, menus, and secure API authorization. Fully modular and scalable.",
       tech: ["React.js", "C#", ".NET API", "Redux Toolkit"],
